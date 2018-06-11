@@ -32,33 +32,11 @@ public class Clase {
 //        }
 
     
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args){
         
-        long ahora;
-        long antes;
-        long inicio = Segundos_De_Hoy();
-        long fin = inicio + 60;
-        long aux = fin - inicio;
-        int contador = 0;
-        
-        System.out.println("Inicio: " + inicio);
-        System.out.println("Fin: " + fin);
-        
-        while((ahora = Segundos_De_Hoy()) <= fin){
-           
-                if((fin - ahora) != aux && contador == 0){
-                    
-                    System.out.println((fin - ahora));
-                    contador = 1;
-                                       
-                }else{
-                    
-                    aux = fin - ahora;
-                    contador = 0;
-                    
-                }
-          
-        }
+     int contador = 0;
+     
+     
  
     }
  
